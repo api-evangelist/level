@@ -1,0 +1,44 @@
+generated: '2026-07-19'
+method: searched
+source: https://level-money.gitbook.io/level-documentation/update-for-the-level-community
+status: sunset
+summary: Level announced in September 2025 that the team is joining the Sky (fka MakerDAO) ecosystem as
+  part of Grove, and that the Level protocol — lvlUSD and slvlUSD — is being sunset. The contracts remain
+  on Ethereum mainnet and redemption remains possible directly against them after the front end retires.
+versioning:
+  scheme: contract-release
+  current: v2
+  note: Protocol versions are contract deployments (v1, v1.1, v2), not an HTTP API version. Each release
+    is separately audited; superseded deployments are listed as "Deprecated Contract Addresses" in the
+    docs.
+  docs: https://level-money.gitbook.io/level-documentation/technical-documentation/contract-details
+deprecation:
+  policy_url: https://level-money.gitbook.io/level-documentation/update-for-the-level-community
+  sunset_header: false
+  announced: '2025-09'
+  deprecated_contracts_published: true
+  deprecated_contracts_url: https://level-money.gitbook.io/level-documentation/technical-documentation/contract-details
+milestones:
+- date: '2025-10-02'
+  event: Final yield distribution. After this date staked assets accrue no yield.
+- date: '2025-10'
+  event: On-chain monitoring (Hexagate) turned off as part of the shutdown process.
+- date: '2025-12-15'
+  event: Front end (app.level.money) retired. Users continue to unstake and redeem by calling the smart
+    contracts directly.
+shutdown_changes:
+- Mints paused — no further lvlUSD can be minted.
+- Redemptions made public; previously permissioned.
+- Redemption rate fixed 1:1 to underlying collateral, replacing Chainlink oracle conversion.
+- Redemption and unstake cooldown periods reduced to 2 seconds.
+- Per-block redemption limit raised to 1,000,000 lvlUSD.
+integrator_guidance:
+  recommended_path: Call LevelMinting to redeem rather than selling through liquidity pools.
+  contract: '0x9136aB0294986267b71BeED86A75eeb3336d09E1'
+  steps:
+  - initiateRedeem(asset, lvlUsdAmount, minAssetAmount)
+  - completeRedeem(asset, beneficiary)
+  docs: https://level-money.gitbook.io/level-documentation/user-guides/interacting-with-level-contracts
+sla: null
+status_page: null
+deprecated_operations: []

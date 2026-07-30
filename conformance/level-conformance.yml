@@ -1,0 +1,38 @@
+generated: '2026-07-19'
+method: searched
+source: https://level-money.gitbook.io/level-documentation
+note: Level publishes no HTTP API, so the usual web-API standards (OAuth 2.0, OIDC, RFC 9457, JSON:API)
+  are not applicable. Conformance here is to on-chain token and vault standards asserted in the docs and
+  contract set.
+standards:
+- id: erc-20
+  conforms: true
+  evidence: lvlUSD (0x7C1156E515aA1A2E851674120074968C905aAF37) and slvlUSD (0x4737D9b4592B40d51e110b94c9C043c6654067Ae)
+    are freely transferable fungible tokens on Ethereum mainnet.
+- id: erc-4626
+  conforms: true
+  evidence: 'Docs: "The lending yield is passed back to users through an ERC-4626 staking mechanism" —
+    lvlUSD is staked for slvlUSD, which accrues value as yield is distributed into the staking contract.'
+- id: layerzero-oft
+  conforms: true
+  evidence: lvlUSD OFTAdapter (0x2f12d09333a6be8cc7c2d3e11a83def02cf0cbfa) and slvlUSD OFTAdapter (0x180FcF9C9F5ECB75de90395d54cd7c69B3902Fcd)
+    on Ethereum, with lvlUSD/slvlUSD OFTs deployed on Base.
+- id: gnosis-safe-multisig
+  conforms: true
+  evidence: Admin 5-of-8, operator 2-of-5 and treasury 3-of-4 Gnosis Safe multisigs published in contract
+    details.
+- id: chainlink-price-feeds
+  conforms: false
+  evidence: Chainlink oracles were used for lvlUSD-to-collateral conversion rates until the sunset; redemption
+    rates were then fixed 1:1, retiring the oracle dependency.
+- id: oauth2
+  conforms: false
+  evidence: No HTTP API surface.
+- id: openid-connect
+  conforms: false
+  evidence: No HTTP API surface.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No HTTP API surface.
+compliance_program: null
+certifications: []
