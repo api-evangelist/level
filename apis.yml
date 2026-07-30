@@ -1,8 +1,29 @@
 aid: level
 name: Level
-description: Level is a company surfaced as a portfolio company of lightspeed-venture-partners, polychain
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: 'Level is a stablecoin protocol that issued lvlUSD, a stablecoin fully backed by USDC and
+  USDT which were deployed into blue-chip lending protocols (Aave and the Morpho Steakhouse USDC vault)
+  to generate yield. Lending yield was passed back to holders through an ERC-4626 staking mechanism: lvlUSD
+  could be staked for slvlUSD, a yield-accruing token that appreciates as the protocol distributes yield
+  into the staking contract. Both tokens were transferable and integrated across DeFi venues including
+  Morpho, Pendle, Spectra and Curve, with LayerZero OFT adapters bridging them to Base. Level exposes no
+  public HTTP API — its programmable surface is a set of audited Ethereum mainnet smart contracts (lvlUSD,
+  slvlUSD, LevelMinting, LevelStakingPool, LevelUsdPointsFarm, LevelReserveLens) documented in GitBook
+  and published on GitHub. In September 2025 the team announced it was joining the Sky (fka MakerDAO)
+  ecosystem as part of Grove and that the Level protocol is being sunset: mints paused, redemptions made
+  public and fixed 1:1, cooldowns cut to two seconds, final yield distribution on 2025-10-02, and the
+  front end retired on 2025-12-15 with contract-level redemption remaining available indefinitely.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.level.money/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/level/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +32,69 @@ x-backed-by:
 - polychain
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: sunset
+x-disambiguation: 'This repo profiles Level (level.money), the lvlUSD stablecoin protocol backed by Polychain
+  Capital, Dragonfly and BFC. The lightspeed-venture-partners portfolio entry at https://lsvp.com/company/level/
+  refers to a DIFFERENT company also named Level (level.com), a 2018 benefits/insurance fintech; as of
+  2026-07-19 level.com resolves no A record and levelbenefits.com serves a parked "Launching Soon" page,
+  so that company has no verifiable public surface to profile. The two were collapsed onto one slug by
+  the VC-portfolio stub generator.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Stablecoins
+- DeFi
+- Cryptocurrency
+- Financial Services
+- Blockchain
+- Ethereum
+- Smart Contracts
+- Yield
 apis: []
+common:
+- type: Website
+  url: https://www.level.money/
+- type: Documentation
+  url: https://level-money.gitbook.io/level-documentation
+- type: GettingStarted
+  url: https://level-money.gitbook.io/level-documentation/user-guides/how-to-get-lvlusd
+- type: Application
+  url: https://app.level.money/
+- type: Support
+  url: https://discord.gg/levelusd
+- type: GitHubOrganization
+  url: https://github.com/Level-Money
+- type: SourceCode
+  url: https://github.com/Level-Money/contracts
+- type: TermsOfService
+  url: https://level-money.gitbook.io/level-documentation/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://level-money.gitbook.io/level-documentation/legal/privacy-policy
+- type: Security
+  url: https://level-money.gitbook.io/level-documentation/technical-documentation/security
+- type: VulnerabilityDisclosure
+  url: security/level-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/level-domain-security.yml
+- type: LLMsTxt
+  url: llms/level-llms.txt
+- type: WellKnown
+  url: well-known/level-well-known.yml
+- type: Lifecycle
+  url: lifecycle/level-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/level-lifecycle.yml
+- type: Conformance
+  url: conformance/level-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
