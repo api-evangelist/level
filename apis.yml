@@ -54,6 +54,8 @@ tags:
 - Yield
 apis: []
 common:
+- type: IssueTracker
+  url: https://github.com/Level-Money/contracts/issues
 - type: Website
   url: https://www.level.money/
 - type: Documentation
