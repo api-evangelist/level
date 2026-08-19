@@ -39,7 +39,7 @@ x-disambiguation: 'This repo profiles Level (level.money), the lvlUSD stablecoin
   2026-07-19 level.com resolves no A record and levelbenefits.com serves a parked "Launching Soon" page,
   so that company has no verifiable public surface to profile. The two were collapsed onto one slug by
   the VC-portfolio stub generator.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
