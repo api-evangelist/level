@@ -12,6 +12,18 @@ description: 'Level is a stablecoin protocol that issued lvlUSD, a stablecoin fu
   ecosystem as part of Grove and that the Level protocol is being sunset: mints paused, redemptions made
   public and fixed 1:1, cooldowns cut to two seconds, final yield distribution on 2025-10-02, and the
   front end retired on 2025-12-15 with contract-level redemption remaining available indefinitely.'
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
