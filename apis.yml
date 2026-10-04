@@ -13,16 +13,19 @@ description: 'Level is a stablecoin protocol that issued lvlUSD, a stablecoin fu
   public and fixed 1:1, cooldowns cut to two seconds, final yield distribution on 2025-10-02, and the
   front end retired on 2025-12-15 with contract-level redemption remaining available indefinitely.'
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - level-money/contracts
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -44,7 +47,7 @@ x-backed-by:
 - polychain
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-status: sunset
+x-status: defunct
 x-disambiguation: 'This repo profiles Level (level.money), the lvlUSD stablecoin protocol backed by Polychain
   Capital, Dragonfly and BFC. The lightspeed-venture-partners portfolio entry at https://lsvp.com/company/level/
   refers to a DIFFERENT company also named Level (level.com), a 2018 benefits/insurance fintech; as of
@@ -54,16 +57,20 @@ x-disambiguation: 'This repo profiles Level (level.money), the lvlUSD stablecoin
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
+x-docs-platform: gitbook
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
 tags:
 - Company
 - Stablecoins
 - DeFi
 - Cryptocurrency
-- Financial-Services
+- Financial Services
 - Blockchain
 - Ethereum
 - Smart Contracts
 - Yield
+- Defunct
 tags_raw:
 - Company
 - Stablecoins
@@ -74,6 +81,8 @@ tags_raw:
 - Ethereum
 - Smart Contracts
 - Yield
+- Financial-Services
+- Defunct
 apis: []
 common:
 - type: IssueTracker
@@ -122,3 +131,5 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-status-source: https://level-money.gitbook.io/level-documentation
+x-status-note: 'Protocol sunset: last yield distribution 2025-10-02, frontend retired 2025-12-15, no new lvlUSD minted; the team joined Sky (Grove). Contract-level redemption stays open. roadmap#589'
