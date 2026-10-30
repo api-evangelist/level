@@ -64,27 +64,52 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Level is a stablecoin protocol that issued **lvlUSD**, a stablecoin fully backed by USDC and USDT which were deployed into blue-chip lending protocols (Aave and the Morpho Steakhouse USDC vault) to generate yield. Lending yield was returned to holders through an ERC-4626 staking mechanism — lvlUSD staked for **slvlUSD**, a yield-accruing token that appreciates as the protocol distributes yield into the staking contract. Both tokens were transferable and integrated across DeFi venues including Morpho, Pendle, Spectra and Curve, with LayerZero OFT adapters bridging them to Base.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Level publishes **no HTTP API**. Its programmable surface is a set of audited Ethereum mainnet smart contracts (lvlUSD, slvlUSD, LevelMinting, LevelStakingPool, LevelUsdPointsFarm, LevelReserveLens) documented in GitBook and published at [github.com/Level-Money](https://github.com/Level-Money).
+Level is a stablecoin protocol that issued lvlUSD, a stablecoin fully backed by USDC and USDT which were deployed into blue-chip lending protocols (Aave and the Morpho Steakhouse USDC vault) to generate yield. Lending yield was passed back to holders through an ERC-4626 staking mechanism: lvlUSD could be staked for slvlUSD, a yield-accruing token that appreciates as the protocol distributes yield into the staking contract. Both tokens were transferable and integrated across DeFi venues including Morpho, Pendle, Spectra and Curve, with LayerZero OFT adapters bridging them to Base. Level exposes no public HTTP API — its programmable surface is a set of audited Ethereum mainnet smart contracts (lvlUSD, slvlUSD, LevelMinting, LevelStakingPool, LevelUsdPointsFarm, LevelReserveLens) documented in GitBook and published on GitHub. In September 2025 the team announced it was joining the Sky (fka MakerDAO) ecosystem as part of Grove and that the Level protocol is being sunset: mints paused, redemptions made public and fixed 1:1, cooldowns cut to two seconds, final yield distribution on 2025-10-02, and the front end retired on 2025-12-15 with contract-level redemption remaining available indefinitely.
 
-## Status: sunset
+**Areas:** Company · Stablecoins · DeFi · Cryptocurrency · Financial Services · Blockchain · Ethereum · Smart Contracts · Yield · Defunct
 
-In September 2025 the Level team announced it was joining the Sky (fka MakerDAO) ecosystem as part of Grove, and that the Level protocol is being sunset — mints paused, redemptions made public and fixed 1:1, cooldowns cut to two seconds, final yield distribution on 2025-10-02, and the front end retired on 2025-12-15. Redemption by calling the contracts directly remains available. See `lifecycle/level-lifecycle.yml`.
+## Level on APIs.io (historical record)
 
-## Disambiguation
+Everything profiled for Level is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/level/](https://apis.io/providers/level/)** — or go straight to one of the APIs or properties below.
 
-This repo profiles **Level (level.money)** — the lvlUSD stablecoin protocol backed by Polychain Capital, Dragonfly and BFC. The `lightspeed-venture-partners` portfolio entry at <https://lsvp.com/company/level/> refers to a **different** company also named Level (level.com), a 2018 benefits/insurance fintech. As of 2026-07-19 `level.com` resolves no A record and `levelbenefits.com` serves a parked "Launching Soon" page, so that company has no verifiable public surface to profile. The two were collapsed onto one slug by the VC-portfolio stub generator.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | File |
-|---|---|
-| llms.txt (verbatim) | `llms/level-llms.txt` |
-| Well-known probe | `well-known/level-well-known.yml` |
-| Lifecycle / sunset | `lifecycle/level-lifecycle.yml` |
-| Conformance | `conformance/level-conformance.yml` |
-| Vulnerability disclosure + audits | `security/level-vulnerability-disclosure.yml` |
-| Domain security | `security/level-domain-security.yml` |
+#### Security (2)
 
-Backed by: lightspeed-venture-partners (see disambiguation), polychain
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Level Domain Security](https://apis.io/security/level/level-domain-security/)
+- [Level Vulnerability Disclosure](https://apis.io/security/level/level-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.level.money/)
+- [Documentation](https://level-money.gitbook.io/level-documentation)
+- [Getting started](https://level-money.gitbook.io/level-documentation/user-guides/how-to-get-lvlusd)
+- [Support](https://discord.gg/levelusd)
+- [Security](https://level-money.gitbook.io/level-documentation/technical-documentation/security)
+- [Terms of service](https://level-money.gitbook.io/level-documentation/legal/terms-and-conditions)
+- [Privacy policy](https://level-money.gitbook.io/level-documentation/legal/privacy-policy)
+- [GitHub](https://github.com/Level-Money)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Level: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/level/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
